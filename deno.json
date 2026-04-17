@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "dev": "deno run -A npm:vite",
+    "build": "deno run -A npm:vite build",
+    "start": "deno run -A src/server/index.ts"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "imports": {
+    "@hono/vite-dev-server": "npm:@hono/vite-dev-server@^0.16.0",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.0.0",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.0.0",
+    "@tanstack/react-router": "npm:@tanstack/react-router@^1.0.0",
+    "@radix-ui/react-slot": "npm:@radix-ui/react-slot@^1.0.0",
+    "class-variance-authority": "npm:class-variance-authority@^0.7.0",
+    "clsx": "npm:clsx@^2.0.0",
+    "hono": "npm:hono@^4.0.0",
+    "lucide-react": "npm:lucide-react@^0.400.0",
+    "react": "npm:react@^18.0.0",
+    "react-dom": "npm:react-dom@^18.0.0",
+    "tailwind-merge": "npm:tailwind-merge@^2.0.0",
+    "vite": "npm:vite@^6.0.0"
+  }
+}
